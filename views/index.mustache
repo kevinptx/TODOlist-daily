@@ -23,7 +23,7 @@
   </section>
 
 <section class="list-todos">
-  <h2>Incomplete TODOs</h2>
+  <h2>Incomplete Tasks</h2>
   <form class="" action="/completed" method="post">
     <div class="">
       {{#todos}}
@@ -38,7 +38,7 @@
     <h2>Completed Tasks</h2>
     <ul>
       {{#completed}}
-        <li>{{.}}</li>
+        {{.}}
       {{/completed}}
     </ul>
   </section>
