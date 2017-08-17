@@ -15,7 +15,7 @@
     <form class="" action="/" method="post">
       <div class="todo-list">
         <!-- <label for="">Task: </label> -->
-        <input type="text" name="todo" value="" placeholder="Enter Your TODO Item" class="">
+        <input type="text" name="todo" value="" placeholder="Enter Your Task" class="">
 
         <input class="button-primary" type="submit" value="Add Todo">
       </div>
@@ -28,7 +28,8 @@
     <div class="">
       {{#todos}}
       <button type="submit" name="completed" value="{{.}}">Done</button>
-      <span>{{.}}</span><br>
+      <span>{{.}}</span>
+      <br>
       {{/todos}}
     </div>
   </form>
@@ -38,7 +39,7 @@
     <h2>Completed Tasks</h2>
     <ul>
       {{#completed}}
-        {{.}}
+        <li>{{.}}</li>
       {{/completed}}
     </ul>
   </section>
